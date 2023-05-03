@@ -34,7 +34,7 @@ L(Node n) {
     if (n.zero_x == 0) return {};
     Node ret(n);
 
-    unsigned char temp = ret.table[ret.zero_y][ret.zero_x - 1];
+    auto temp = ret.table[ret.zero_y][ret.zero_x - 1];
     ret.table[ret.zero_y][ret.zero_x - 1] = 0;
     ret.table[ret.zero_y][ret.zero_x] = temp;
 

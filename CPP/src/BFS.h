@@ -15,8 +15,7 @@
 
 class BFS {
 public:
-    static std::optional<Node> bfs(unsigned short size_y, unsigned short size_x, const std::string &order, unsigned short max_depth = 7) {
-        Node n(size_y, size_x);
+    static std::optional<Node> bfs(Node & n, const std::string &order, unsigned short max_depth = 7) {
         if (Graph::isGoal(n)) return SUCCESS(n);
 
         std::deque<Node> dq;
