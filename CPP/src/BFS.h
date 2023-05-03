@@ -24,14 +24,16 @@ public:
         set.insert(n);
 
         while (!dq.empty()) {
-            Node elem = dq.back();
-            dq.pop_back();
+            Node elem = dq.front();
+            dq.pop_front();
 
             std::array<std::optional<Node>, 4> neighbors = Graph::neighbors(elem, order);
             for (auto neighbor: neighbors) {
                 if (!neighbor.has_value()) continue;
 
                 if (!set.count(neighbor.value())) {
+                    //TODO remove
+                    std::cout << neighbor->path << std::endl;
                     if (Graph::isGoal(neighbor.value()))
                         return SUCCESS(neighbor);
 

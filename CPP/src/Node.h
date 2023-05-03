@@ -22,13 +22,14 @@ public:
 
     //operators
     bool operator==(const Node & other) const;
+    bool operator<(const Node & other) const;
 
     //fields
     unsigned char** table;
-    unsigned char size_y;
-    unsigned char size_x;
-    unsigned char zero_y;
-    unsigned char zero_x;
+    unsigned short size_y;
+    unsigned short size_x;
+    unsigned short zero_y;
+    unsigned short zero_x;
     std::string path;
 };
 

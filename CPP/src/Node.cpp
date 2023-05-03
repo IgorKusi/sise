@@ -83,6 +83,11 @@ operator==(const Node & other) const {
     return true;
 }
 
+bool Node::operator<(const Node &other) const {
+    //TODO STL ty kurwo jebana
+    return !operator==(other);
+}
+
 std::ostream &
 operator<<(std::ostream & stream, const Node & n) {
     stream << NodeHelper::to_string(n);
