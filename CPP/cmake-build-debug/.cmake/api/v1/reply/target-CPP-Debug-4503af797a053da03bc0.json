@@ -58,11 +58,11 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "D:/SISE/repo/CPP/src"
+					"path" : "C:/studia/sise/CPP/src"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "D:/SISE/repo/CPP/tclap-1.4.0-rc1/include"
+					"path" : "C:/studia/sise/CPP/tclap-1.4.0-rc1/include"
 				}
 			],
 			"language" : "CXX",
@@ -135,7 +135,8 @@
 				3,
 				5,
 				8,
-				11
+				11,
+				12
 			]
 		}
 	],
@@ -205,6 +206,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/Util.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/DFS.h",
 			"sourceGroupIndex" : 1
 		}
 	],
