@@ -136,7 +136,8 @@
 				5,
 				8,
 				11,
-				12
+				12,
+				13
 			]
 		}
 	],
@@ -211,6 +212,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/DFS.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/Astr.h",
 			"sourceGroupIndex" : 1
 		}
 	],

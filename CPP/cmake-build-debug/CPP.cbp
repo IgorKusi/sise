@@ -86,6 +86,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/studia/sise/CPP/src/Astr.h">
+			<Option target="CPP"/>
+		</Unit>
 		<Unit filename="C:/studia/sise/CPP/src/BFS.h">
 			<Option target="CPP"/>
 		</Unit>
