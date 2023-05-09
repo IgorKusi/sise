@@ -26,10 +26,10 @@ public:
 
     //fields
     unsigned char** table;
-    unsigned short size_y;
-    unsigned short size_x;
-    unsigned short zero_y;
-    unsigned short zero_x;
+    unsigned char size_y;
+    unsigned char size_x;
+    unsigned char zero_y;
+    unsigned char zero_x;
     std::string path;
 };
 

@@ -6,7 +6,13 @@
 #include "Util.h"
 #include <map>
 #include <fstream>
+#include <chrono>
 
+using std::chrono::high_resolution_clock;
+using std::chrono::duration_cast;
+using std::chrono::duration;
+using std::chrono::seconds;
+using std::chrono::milliseconds;
 using namespace std;
 
 int main(int argc, char * argv[]) {
@@ -65,8 +71,18 @@ int main(int argc, char * argv[]) {
         Node a(size_y, size_x, initial_state);
         cout << "GOAL:\n" << *Graph::goal << endl;
         cout << "INITIAL STATE:\n" << a << endl;
-        cout << "SOLVED:\n" << ( solved = BFS::bfs(a, strat.getValue()) ).value() << endl;
-        cout << "PATH:\t" << solved->path;
+
+//        cout << Graph::L(a).value();
+////        cout << Graph::R(a).value();
+//        cout << Graph::U(a).value();
+//        cout << Graph::D(a).value();
+
+        auto t_0 = high_resolution_clock::now();
+        solved = BFS::bfs(a, strat.getValue());
+        auto t_f = high_resolution_clock::now();
+        cout << "SOLVED:\n" << solved.value() << endl;
+        cout << "PATH:\t" << solved->path << endl;
+        cout << "TIME: " << duration_cast<seconds>(t_f - t_0).count() << " sec (" << duration_cast<milliseconds>(t_f - t_0).count() << " ms)";
 
 
         delete Graph::goal;

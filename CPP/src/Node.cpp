@@ -9,9 +9,21 @@ Node::
 Node(unsigned short size_y, unsigned short size_x, unsigned char ** tab) : size_y(size_y), size_x(size_x) {
     if (tab != nullptr) {
         table = tab;
+        for (int y = 0; y < size_y; ++y) {
+            for (int x = 0; x < size_x; ++x) {
+                if (tab[y][x] == 0) {
+                    zero_y = y;
+                    zero_x = x;
+                    return;
+                }
+            }
+        }
+
         return;
     }
 
+    zero_y = 3;
+    zero_x = 3;
     table = new unsigned char*[size_y];
     for (int y = 0; y < size_y; ++y) {
         table[y] = new unsigned char[size_x];
@@ -20,8 +32,6 @@ Node(unsigned short size_y, unsigned short size_x, unsigned char ** tab) : size_
             table[y][x] = y * size_x + x + 1 == size_x * size_y ? 0 : y * size_x + x + 1;
         }
     }
-    zero_y = 0;
-    zero_x = 0;
 }
 
 Node::

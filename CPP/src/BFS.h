@@ -33,7 +33,7 @@ public:
 
                 if (!set.count(neighbor.value())) {
                     //TODO remove
-                    std::cout << neighbor->path << std::endl;
+//                    std::cout << neighbor->path << std::endl;
                     if (Graph::isGoal(neighbor.value()))
                         return SUCCESS(neighbor);
 
