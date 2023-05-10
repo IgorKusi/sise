@@ -49,7 +49,6 @@ public:
         std::unordered_set<Node> set;
         PrioPair pair(0, n);
 
-        //PLACEHOLDER PARA = (node, 0)
         pq.push(pair);
 
 
@@ -68,6 +67,9 @@ public:
                     if (!set.count(n.value())) {
                         int f = g(n.value()) + h(n.value(), heuristic);
                         PrioPair prioPair(f, &n.value());
+
+                        //tutaj niestety c++ mnie pokonało referencjami wskaźnikami i moją własną głupotą
+                        //pewnie do naprawienia w 2 linijkach, ale nwm kurwa nwm
                     }
                 }
             }
