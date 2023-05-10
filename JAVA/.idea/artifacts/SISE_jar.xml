@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SISE:jar">
+    <output-path>$PROJECT_DIR$/solutions/artifacts/SISE_jar</output-path>
+    <root id="archive" name="SISE.jar">
+      <element id="module-output" name="SISE" />
+    </root>
+  </artifact>
+</component>

@@ -96,4 +96,18 @@ public class Node {
                 ", hash=" + hashCode() +
                 '}';
     }
+
+    /**
+     * @param cell_value to find
+     * @return [y, x]
+     */
+    public int[] find_position(int cell_value) {
+        for (int y = 0; y < size_y; y++) {
+            for (int x = 0; x < size_x; x++) {
+                if (table[y][x] == cell_value) return new int[]{y, x};
+            }
+        }
+        return new int[]{-1, -1};
+    }
+
 }

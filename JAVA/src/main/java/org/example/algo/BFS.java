@@ -5,13 +5,22 @@ import org.example.Node;
 
 import java.util.ArrayDeque;
 import java.util.HashSet;
+import java.util.List;
 
 public class BFS extends Algorithm {
-    public static Node bfs(Node n, String order) {
-        return bfs(n, order, 7);
+
+    public BFS() {
+        this.visited_states = 1;
+        this.processed_states = 1;
+        this.max_depth_reached = 0;
     }
 
-    public static Node bfs(Node n, String order, int max_depth) {
+    @Override
+    public Result apply(Node n, String strat) {
+        return bfs(n, strat);
+    }
+
+    public Result bfs(Node n, String order) {
         if ( Graph.isGoal(n) ) return SUCCESS(n);
 
         ArrayDeque<Node> dqueue = new ArrayDeque<>();
@@ -22,12 +31,17 @@ public class BFS extends Algorithm {
         while ( !dqueue.isEmpty() ) {
             Node elem = dqueue.pollFirst();
 
-            Node[] neighbors = Graph.neighbors(elem, order);
-            for (Node neighbor : neighbors) {
-                if ( neighbor == null || discovered.contains(neighbor) ) continue;
+            List<Node> neighbors = Graph.neighbors(elem, order);
+            neighbors.removeIf(discovered::contains);
 
-                if ( Graph.isGoal(neighbor) )
+            for (Node neighbor : neighbors) {
+                //processing here
+                ++processed_states;
+                if ( neighbor.path.length() > max_depth_reached ) max_depth_reached = neighbor.path.length();
+                if ( Graph.isGoal(neighbor) ) {
+                    visited_states += discovered.size();
                     return SUCCESS(neighbor);
+                }
 
                 dqueue.addLast(neighbor);
                 discovered.add(neighbor);
