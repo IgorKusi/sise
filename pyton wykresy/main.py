@@ -56,7 +56,7 @@ ax[0, 1].bar(names_axis + 0.5 * width, stats('astr', 'manh')[0], width, color='d
 ax[0, 1].set_title("A*")
 ax[0, 1].set_xticks(names_axis, names)
 ax[0, 1].set_yticks([1, 2, 3, 4, 5, 6, 7])
-ax[0, 1].legend(["BFS", "DFS", "A*"], loc="upper left")
+ax[0, 1].legend(["Hamming", "Manhattan"], loc="upper left")
 
 width = 0.10
 ax[1, 0].bar(names_axis - 3.5 * width, stats('bfs', 'rdul')[0], width, color='lightblue', edgecolor='black')
@@ -88,6 +88,7 @@ plt.savefig('wykresy.png')
 plt.clf()
 
 
+plt.rcParams["figure.figsize"] = [9, 13]
 fig, ax = plt.subplots(2, 2, tight_layout=True)
 width = 0.3
 ax[0, 0].bar(names_axis - 0.25, stats('bfs')[1], 0.25, color='yellow', log=True, edgecolor='black')
@@ -237,7 +238,6 @@ ax[1, 1].set_xlabel("Depth")
 plt.savefig('wykresy3.png')
 plt.clf()
 
-plt.rcParams["figure.figsize"] = [9, 13]
 fig2, ax2 = plt.subplots(2, 2, tight_layout=True)
 ax2[0, 0].bar(names_axis - 0.2, stats('bfs')[4], 0.2, color='yellow', log=True, edgecolor='black')
 ax2[0, 0].bar(names_axis, stats('dfs')[4], 0.2, color='orange', log=True, edgecolor='black')

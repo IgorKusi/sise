@@ -6,10 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="680751d9-66bf-4da3-9742-86e55e97763f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astrl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/astrmr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/astrp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/astrt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/astrv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bfsl.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wykresy.png" beforeDir="false" afterPath="$PROJECT_DIR$/wykresy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wykresy1.png" beforeDir="false" afterPath="$PROJECT_DIR$/wykresy1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wykresy2.png" beforeDir="false" afterPath="$PROJECT_DIR$/wykresy2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oamr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oap.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oav.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +89,8 @@
       <option name="presentableId" value="Default" />
       <updated>1683738946087</updated>
       <workItem from="1683738950982" duration="19310000" />
-      <workItem from="1683794165270" duration="4578000" />
+      <workItem from="1683794165270" duration="4858000" />
+      <workItem from="1683801934298" duration="571000" />
     </task>
     <servers />
   </component>
@@ -89,6 +98,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pyton_wykresy$main.coverage" NAME="main Coverage Results" MODIFIED="1683801202942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pyton_wykresy$main.coverage" NAME="main Coverage Results" MODIFIED="1683802227650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
