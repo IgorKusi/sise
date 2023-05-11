@@ -81,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683738946087</updated>
       <workItem from="1683738950982" duration="19310000" />
-      <workItem from="1683794165270" duration="2743000" />
+      <workItem from="1683794165270" duration="4578000" />
     </task>
     <servers />
   </component>
@@ -89,6 +89,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pyton_wykresy$main.coverage" NAME="main Coverage Results" MODIFIED="1683796929050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pyton_wykresy$main.coverage" NAME="main Coverage Results" MODIFIED="1683801202942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
